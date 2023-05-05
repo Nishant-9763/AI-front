@@ -22,7 +22,7 @@ const Get = () => {
 
   const  getUser =useCallback( () => {
 
-      axios.get(`https://ewwe.onrender.com/getImages`, {
+      axios.get(`https://ai-back.vercel.app/getImages`, {
           headers: { Authorization: "Bearer " + token },
         })
   
@@ -48,7 +48,7 @@ const Get = () => {
   function deleteImage(id,imageId) {
     successToast(" Image deleted ");
     axios
-      .delete(`https://ewwe.onrender.com/deleteImage/${imageId}/${id}`, {
+      .delete(`https://ai-back.vercel.app/deleteImage/${imageId}/${id}`, {
         headers: { Authorization: "Bearer " + token },
       })
       
