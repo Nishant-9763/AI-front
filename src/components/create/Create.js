@@ -31,7 +31,7 @@ const Create = () => {
       setLoading(true)
       event.preventDefault()
       
-      axios.post(`ai-back.vercel.app/createImage`,{prompt}, {'headers': {'Authorization': 'Bearer ' + token}})
+      axios.post(`https://ai-back.vercel.app/createImage`,{prompt}, {'headers': {'Authorization': 'Bearer ' + token}})
         .then((res) => {
           
             // console.log(res.data.data.imageUrl);
