@@ -17,7 +17,7 @@ const Login = () =>{
 
     const login = function (event) {
         event.preventDefault();
-        axios.post('https://ewwe.onrender.com/loginUser', {
+        axios.post('https://ai-back.vercel.app/loginUser', {
            email,password
         })
             .then((res) => {
