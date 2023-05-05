@@ -19,7 +19,7 @@ const Register = () =>{
 
     const register = function (event) {
         event.preventDefault();
-        axios.post('https://ewwe.onrender.com/createUser', {
+        axios.post('https://ai-back.vercel.app/createUser', {
            email,password,name,phone_number
         })
             .then((res) => {
